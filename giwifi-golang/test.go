@@ -1,5 +1,5 @@
 package main
-
+//加密测试
 import "fmt"
 
 /*
@@ -16,7 +16,7 @@ string GetChallge(string MakePass, string TokenChallge)
 }
 */
 func main() {
-	challge := GetChallge(calPass("296649462"), "12sax1a1x5sa1da2w864t8hf1h5tf2bf1")
+	challge := GetChallge(calPass("密码"), "12sax1a1x5sa1da2w864t8hf1h5tf2bf1")
 	fmt.Print(challge)
 }
 

@@ -71,11 +71,11 @@ class GiWiFi(object):
          'data': 
              {
              'auth_state': 2,
-             'gw_id': 'GWIFI-zhongbeixinshang02',
+             'gw_id': 'GWIFI-xxxxxx',
              'access_type': '1',
               'authStaType': '2',
-             'station_sn': '000babf63722',
-             'client_mac': 'ec:35:86:2b:91:44',
+             'station_sn': '000xxxxxxxxx',
+             'client_mac': 'xx:xx:xx:xx:xx:xx',
              'online_time': 28219,
              'logout_reason': 7,
              'contact_phone': '400-038-5858',
@@ -107,9 +107,7 @@ class GiWiFi(object):
         #添加类属性
         self.challege_id = tojson['data']['challege_id']
 
-        '''例子
-         {'resultCode': 0, 'resultMsg': '', 'data': {'challege_id': 'c4ef032c95d8e9dbdab6e3b99886e984'}}
-        '''
+
         return tojson
 
     #2、获取登录地址，通过post

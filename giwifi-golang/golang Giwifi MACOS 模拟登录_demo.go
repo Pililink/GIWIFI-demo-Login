@@ -19,7 +19,7 @@ func main() {
 	userInfo.Name = "账号"//账号
 	userInfo.Mac = "" //下面自动获取
 	userInfo.Ip = "172.17.55.228" //本机ip
-	userInfo.Gw_id = "ec:35:86:2b:91:44"//giwifi mac地址
+	userInfo.Gw_id = "xx:xx:xx:xx:xx:xx"//giwifi mac地址
 	userInfo.Gw_address = "172.17.1.2"//giwifi ip地址
 	userInfo.Challege = "" //下面自动计算得出
 	userInfo.Ap_mac = ""
@@ -231,21 +231,6 @@ func authChallege(authChallegeJson *AuthChallegeJson, authChallegeDataJson *Auth
 	q.Add("gw_address", string(userInfo.Gw_address))
 	q.Add("challege", string(userInfo.Challege))
 	q.Add("ap_mac", string(userInfo.Ap_mac))
-	/*
-		fmt.Println(userInfo.Version)
-		q.Add("version", "1.1.4.1")
-		q.Add("sta_type", "pc")
-		q.Add("sta_nic_type", "1")
-		q.Add("sta_model", "mac10.15")
-		q.Add("service_type", "1")
-		q.Add("name", "账号")
-		q.Add("mac", "ec:35:86:2b:91:44")
-		q.Add("ip", "172.17.55.228")
-		q.Add("gw_id", "GWIFI-demo02")
-		q.Add("gw_address", "172.17.1.2")
-		q.Add("challege", "Mej3k62fN1j7Qa52N8DeY7y4")
-		q.Add("ap_mac", "")
-	*/
 	req.URL.RawQuery = q.Encode()
 	fmt.Println("")
 	fmt.Println(req.URL.String())

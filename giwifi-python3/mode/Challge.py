@@ -33,8 +33,3 @@ class Challge:
             res += MakePass[i]
             res += TokenChallge[31 - i]
         return res
-
-'''a = Challge()
-aa = a.get('296649462','1e6dd1eadaf7225c51aee0237342fb16')
-print(aa)
-'''
